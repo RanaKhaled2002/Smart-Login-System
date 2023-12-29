@@ -1,0 +1,67 @@
+/* =============== Constant =============== */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --main-color:#24353F;
+    --normal-foucs-color:#d99c39;
+    --normal-box-shadow-color:#fec26055;
+    --sucess-foucs-color:#198754;
+    --sucess-box-shadow-color:#19875440;
+    --falid-foucs-color:#dc3545;
+    --falid-box-shadow-color:#dc354540;
+}
+body
+{
+    background-color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color);
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+#main .form-control
+{
+    background-color: transparent !important;
+}
+#main input::placeholder
+{
+    color: white !important;
+}
+.m-10
+{
+    margin: 10rem !important;
+}
+.pb-13
+{
+    padding: 3rem !important;
+    padding-bottom: 9.1rem !important;
+}
+/* ==================== Inputs Form ==================== */
+#main .form-control:focus
+{
+    border-color: var(--normal-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--normal-box-shadow-color);
+}
+#main .form-control.is-invalid:focus
+{
+    border-color: var(--falid-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--falid-box-shadow-color);
+}
+#main .is-valid:focus
+{
+    border-color: var(--sucess-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--sucess-box-shadow-color);
+}
